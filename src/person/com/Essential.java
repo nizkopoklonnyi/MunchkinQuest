@@ -1,5 +1,8 @@
 package person.com;
 
+import java.util.ArrayList;
+
+import item.com.Buff;
 import javafx.scene.paint.Color;
 
 public abstract class Essential {
@@ -14,7 +17,7 @@ public abstract class Essential {
 	
 	/**damage of essential*/
 	private Double mDamage;
-	
+	private ArrayList<Buff> mBuff;
 	
 	public void setPositionX(Double x){
 		this.x=x;
@@ -39,6 +42,12 @@ public abstract class Essential {
 	}
 	public Double getDamage(){
 		return mDamage;
+	}
+	public void setBuff(ArrayList<Buff> buff){
+		this.mBuff=buff;
+	}
+	public ArrayList<Buff> getBuff(){
+		return this.mBuff;
 	}
 	
 }
