@@ -1,6 +1,6 @@
 package item.com;
 
-public class Buff {
+public class Buff extends MapObjects{
 	
 	protected Double mDamage;
 	protected Double mLevel;
